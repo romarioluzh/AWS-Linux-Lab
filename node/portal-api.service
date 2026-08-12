@@ -1,0 +1,14 @@
+[Unit]
+Description=Portal API Node.js
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/portal-api
+ExecStart=/usr/bin/node /opt/portal-api/app.js
+Restart=always
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
