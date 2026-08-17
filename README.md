@@ -70,15 +70,14 @@ Durante o laboratório foram configurados diversos serviços utilizados em ambie
 # 📖 Conhecimentos adquiridos
 
 - Administração básica de Linux
-- Gerenciamento de permissões
-- SSH utilizando chave privada
-- Configuração do Nginx
-- Hospedagem de múltiplos sites
-- HTTPS com Let's Encrypt
-- Node.js
-- Express
-- Reverse Proxy
+- Gerenciamento de permissões e usuários
+- Acesso remoto via SSH
+- Configuração de Virtual Hosts no Nginx
+- Configuração de HTTPS com Let's Encrypt
+- Desenvolvimento de APIs com Node.js e Express
+- Configuração de Reverse Proxy
 - Gerenciamento de serviços com systemd
+- Versionamento de código com Git e GitHub
 
 ---
 
