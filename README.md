@@ -79,6 +79,38 @@ Durante o laboratório foram configurados diversos serviços utilizados em ambie
 
 ---
 
+# 📷 Demonstração
+
+## Página principal
+
+![Página principal](screenshots/home-labti.png)
+
+---
+
+## Portal TI
+
+![Portal TI](screenshots/portal-ti.png)
+
+---
+
+## API Node.js
+
+![API](screenshots/api-node.png)
+
+---
+
+## Serviço systemd
+
+![Systemd](screenshots/systemd-status.png)
+
+---
+
+## HTTPS com Let's Encrypt
+
+![HTTPS](screenshots/https-certificado.png)
+
+---
+
 # 🚀 Próximos projetos
 
 - PostgreSQL
