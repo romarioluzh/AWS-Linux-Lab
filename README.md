@@ -47,6 +47,9 @@ Durante o laboratório foram configurados diversos serviços utilizados em ambie
 - Let's Encrypt
 - Certbot
 - DuckDNS
+- JavaScript
+- npm
+- Certbot
 
 ---
 
