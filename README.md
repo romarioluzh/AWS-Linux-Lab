@@ -1,38 +1,39 @@
 # 🚀 AWS Linux Lab
 
-> Laboratório de Infraestrutura Linux desenvolvido durante meus estudos em Cloud Computing e Administração de Sistemas.
+> Laboratório prático de Infraestrutura Linux, Cloud Computing e DevOps, desenvolvido em uma instância Ubuntu na Amazon EC2.
 
 ---
 
-# 📌 Sobre o projeto
+# 📌 Objetivo
 
-Este projeto documenta a construção de um ambiente Linux utilizando uma instância Ubuntu hospedada na Amazon EC2.
+Este repositório documenta minha evolução prática em Administração Linux, Cloud Computing e DevOps.
 
-Durante o laboratório foram configurados diversos serviços utilizados em ambientes profissionais, incluindo servidor web, HTTPS, Virtual Hosts, Reverse Proxy e uma API desenvolvida em Node.js.
+Durante os projetos são implementadas soluções semelhantes às encontradas em ambientes corporativos, utilizando Linux, Nginx, HTTPS, Node.js, PostgreSQL e outras tecnologias amplamente adotadas pelo mercado.
+
+Cada projeto amplia a arquitetura do anterior, formando uma infraestrutura completa construída passo a passo.
 
 ---
 
-# 🏗️ Arquitetura
+# 🏗 Arquitetura
 
 ```text
                     Internet
-                         │
-                         ▼
-               HTTPS (443)
-                         │
-                         ▼
-                    Nginx
-               (Reverse Proxy)
-                         │
-         ┌───────────────┴───────────────┐
-         ▼                               ▼
-   Site Principal                  API Node.js
- (/var/www/html)                localhost:3000
+                        │
+                  HTTPS (443)
+                        │
+                Nginx (Reverse Proxy)
+                  │               │
+                  │               │
+        Site Institucional     API Node.js
+          (HTML/CSS)           Express
+                                   │
+                                   │
+                             PostgreSQL
 ```
 
 ---
 
-# 🛠️ Tecnologias utilizadas
+# 🛠 Tecnologias
 
 - Ubuntu Server 26.04
 - Amazon EC2
@@ -43,6 +44,7 @@ Durante o laboratório foram configurados diversos serviços utilizados em ambie
 - Nginx
 - Node.js
 - Express
+- PostgreSQL
 - Systemd
 - Let's Encrypt
 - Certbot
@@ -50,43 +52,102 @@ Durante o laboratório foram configurados diversos serviços utilizados em ambie
 
 ---
 
-# 📚 Projetos desenvolvidos
+# 📂 Estrutura do Projeto
 
-| Projeto | Status |
-|----------|:------:|
-| Administração Linux | ✅ |
-| Servidor Web (Nginx) | ✅ |
-| HTTPS com Let's Encrypt | ✅ |
-| Virtual Hosts | ✅ |
-| API Node.js | ✅ |
-| Reverse Proxy | ✅ |
-| Serviço com systemd | ✅ |
+```text
+AWS-Linux-Lab
+├── docs/
+├── html/
+├── nginx/
+├── node/
+├── screenshots/
+└── README.md
+```
 
 ---
 
-# 📖 Conhecimentos adquiridos
+# 📸 Demonstração
 
-- Administração básica de Linux
-- Gerenciamento de permissões
-- SSH utilizando chave privada
-- Configuração do Nginx
-- Hospedagem de múltiplos sites
-- HTTPS com Let's Encrypt
-- Node.js
-- Express
+## Página Principal
+
+![Portal](screenshots/portal-ti.png)
+
+---
+
+## API Node.js
+
+![API](screenshots/api-node.png)
+
+---
+
+## HTTPS funcionando
+
+![HTTPS](screenshots/https-certificado.png)
+
+---
+
+## API consultando usuários
+
+![Usuários](screenshots/api-usuarios.png)
+
+---
+
+## Consulta por ID
+
+![Usuário](screenshots/api-usuarios-id.png)
+
+---
+
+## PostgreSQL
+
+![PostgreSQL](screenshots/postgres-select.png)
+
+---
+
+## Status da API
+
+![Systemd](screenshots/systemd-api.png)
+
+---
+
+## Estrutura do Projeto
+
+![Tree](screenshots/estrutura-projeto.png)
+
+---
+
+# 📚 Competências desenvolvidas
+
+Durante este laboratório foram desenvolvidas competências em:
+
+- Administração Linux
+- Gerenciamento de serviços com Systemd
+- Configuração de Nginx
 - Reverse Proxy
-- Gerenciamento de serviços com systemd
+- HTTPS com Let's Encrypt
+- Desenvolvimento de APIs REST
+- Integração Node.js + PostgreSQL
+- SQL (CRUD)
+- Git e GitHub
+- Organização de infraestrutura em ambiente Cloud
 
 ---
 
-# 🚀 Próximos projetos
+# 🚀 Próximos Projetos
 
-- PostgreSQL
-- Docker
-- Docker Compose
-- Kubernetes
-- Terraform
-- Ansible
+- ✅ Projeto 1 — Linux
+- ✅ Projeto 2 — Nginx
+- ✅ Projeto 3 — HTTPS
+- ✅ Projeto 4 — API Node.js
+- ✅ Projeto 5 — PostgreSQL
+
+## Em desenvolvimento
+
+- 🔜 Projeto 6 — Docker
+- 🔜 Projeto 7 — Docker Compose
+- 🔜 Projeto 8 — GitHub Actions
+- 🔜 Projeto 9 — Terraform
+- 🔜 Projeto 10 — Kubernetes
 
 ---
 
@@ -94,4 +155,7 @@ Durante o laboratório foram configurados diversos serviços utilizados em ambie
 
 **Romário Henrique**
 
-Projeto desenvolvido como parte da minha jornada de estudos em Infraestrutura, Linux, Cloud Computing e DevOps.
+Estudante de Infraestrutura, Cloud Computing e DevOps.
+
+GitHub:
+https://github.com/romarioluzh
