@@ -1,4 +1,6 @@
-# 🚀 AWS Linux Lab
+## 📸 Visão geral
+
+![Projeto](screenshots/github-readme.png)# 🚀 AWS Linux Lab
 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-26.04-E95420?style=for-the-badge&logo=ubuntu)
 ![Docker](https://img.shields.io/badge/Docker-29-2496ED?style=for-the-badge&logo=docker)
@@ -55,6 +57,13 @@ Este repositório documenta minha evolução prática na construção de um ambi
 - Framework Express
 - Gerenciamento do serviço com Systemd
 - Endpoints para monitoramento
+### Status da API
+
+![API Status](screenshots/api-status.png)
+
+### Consulta de usuários
+
+![Usuários](screenshots/api-usuarios.png)
 
 ---
 
@@ -64,6 +73,9 @@ Este repositório documenta minha evolução prática na construção de um ambi
 - Criação de banco de dados
 - Integração da API com PostgreSQL
 - Consultas SQL utilizando Node.js
+### Consulta ao banco
+
+![PostgreSQL](screenshots/postgres-select.png)
 
 ---
 
@@ -78,11 +90,24 @@ Este repositório documenta minha evolução prática na construção de um ambi
 - Inicialização automática do banco com init.sql
 - Healthcheck entre serviços
 
+### Containers em execução
+
+![Docker Compose](screenshots/docker-compose-ps.png)
+
+### Imagens Docker
+
+![Docker Images](screenshots/docker-images.png)
+
 ---
 
 # 🏗 Arquitetura
 
 ```mermaid
+
+### Estrutura do projeto
+
+![Estrutura](screenshots/estrutura-projeto.png)
+
 graph TD
 
 Internet --> Nginx
