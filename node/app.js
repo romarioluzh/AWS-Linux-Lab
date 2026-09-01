@@ -2,13 +2,14 @@ const express = require("express");
 const os = require("os");
 const { Pool } = require("pg");
 const app = express();
+require("dotenv").config();
 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "portalti",
-    password: "portal123",
-    port: 5432
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 });
 
 app.get("/", (req, res) => {
@@ -83,6 +84,6 @@ app.get("/api/status-db", async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Servidor iniciado na porta 3000");
 });

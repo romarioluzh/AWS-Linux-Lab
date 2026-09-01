@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: postgres-db
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: portalti
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: portal123
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d portalti"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    container_name: portal-api
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres-data:
